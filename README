@@ -1,0 +1,34 @@
+=============
+ Description
+=============
+A basic tool invincibility plugin, I created this as I noticed lag issues with 
+the existing Invincible Tools plugin.
+
+=============
+ Features
+=============
+Ability to toggle invincibility on a per-item basis.
+Invincibility can be enabled on a per-group basis:
+	1) Edit InvTools.properties and set "groupPolicy=true"
+	2) Give the appropriate groups access to "/InvTools" to enable
+Tools are only "repaired" when their damage reaches a certain threshold.
+
+=============
+ Properties
+=============
+groupPolicy - A boolean that selects whether enabling is based on groups.
+Tools - A comma-separated list of item IDs that should be invincible.
+RepairPoint - An integer that sets the minimum damage an item is repaired at.
+
+=============
+ Known Bugs
+=============
+- Items can be destroyed if used to attack.
+- If multiples of the same item are equipped, the lowest slot will be recreated 
+  instead of the one in the players hand.
+  
+=============
+ Compiling
+=============
+Place "Minecraft_Mod.jar" and "minecraft_server.jar" in "hMod-InvTools", load
+the project in Eclipse, and export a JAR.
